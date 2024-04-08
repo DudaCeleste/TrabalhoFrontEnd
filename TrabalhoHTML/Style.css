@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('Fonts/BebasNeue-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'coolvetica';
+    src: url('Fonts/coolvetica-rg.otf') format('opentype');
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+
+
+header {
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    background-color: rgb(10, 10, 49);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+header img,
+header h1,
+header nav{
+            display: inline-block;
+            vertical-align: middle; 
+        }
+
+header h1 {
+    font-family: 'BebasNeue';
+    font-size: 200%;
+    color: rgb(240, 239, 204);
+    margin-left: 10px;
+  }
+
+header img {
+    width: 100px;
+    height: auto; 
+}
+header nav {
+    margin-left: 20px;
+}
+header nav a {
+    font-family: 'BebasNeue';
+    font-size: 150%;
+    margin-left: 5px;
+    border-right: 3px solid rgb(255, 243, 176);
+    padding-right: 7px;
+    height: 100px;
+    color: rgb(250, 238, 169);
+}
+header nav a:hover{
+    color: #3a66df;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login-btn {
+    margin-inline-start: auto;
+    margin-right: 20px;
+    padding: 5px 10px;
+    background-color: #3393fa;
+    color: #ffecac;
+    font-family: 'coolvetica';
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    background-color: #0a3eaf;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; 
+    margin-top: 100px;
+    background-color: rgba(22, 22, 177, 0.219);
+    border-radius: 20px;
+}
+main h2{
+    color: rgb(252, 252, 202);
+    font-family: 'BebasNeue';
+    font-size: 50px;
+}
+main p{
+    font-size: 20px;
+    color: rgb(248, 248, 191);
+    font-family: 'coolvetica';
+}
+
+body {
+position: relative;
+background-image: url(Images/backgroud.png);
+background-size: 200%;
+background-repeat: repeat;
+background-color: rgb(26, 26, 128);
+}
+
+
+footer {
+    background-color: #3a66dfdc;
+    color: #c4c0fc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+  }
+  
+  footer a:hover {
+    color: #09adc7;
+  }
+
+  #scrollTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    right: 20px; 
+    z-index: 99; 
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #4b7cc4;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#scrollTopBtn:hover {
+    background-color: #0934c0; 
+}
+
+
+
+/*login*/
+
+input {
+    font-family: 'coolvetica';
+  }
+.form-wrap {
+  background-color: #7ea8e7;
+  width: 400px;
+  height: 400px;
+  margin: 3em auto;
+  border-radius: 7px;
+}
+.form-wrap .tabs {
+  overflow: hidden;
+}
+.form-wrap .tabs h3 {
+  float: left;
+  width: 50%;
+}
+.form-wrap .tabs h3 a {
+  font-family: 'BebasNeue';
+  padding: 0.5em 0;
+  text-align: center;
+  font-weight: 400;
+  background-color: #7ea8e7;
+  display: block;
+  color: #02000f;
+  
+}
+.form-wrap .tabs h3 a.active {
+  background-color: #ffffff;
+}
+.form-wrap .tabs-content {
+  padding: 1.5em;
+}
+.form-wrap .tabs-content div[id$="tab-content"] {
+  display: none;
+}
+.form-wrap .tabs-content .active {
+  display: block !important;
+}
+.form-wrap form .input {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: inherit;
+  font-family: 'coolvetica';
+  padding: 0.8em 0 10px 0.8em;
+  border: 1px solid #cfcfcf;
+  outline: 0;
+  display: inline-block;
+  margin: 0 0 0.8em 0;
+  padding-right: 2em;
+  width: 100%;
+  border-radius: 7px;
+}
+.form-wrap form .button {
+  width: 100%;
+  padding: 0.8em 0 10px 0.8em;
+  background-color: #03034e;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 7px;
+}
+.form-wrap form .button:hover {
+  background-color: #4343e4;
+}
+label {
+    font-family: 'coolvetica';
+    cursor: default;
+}
+.form-wrap .help {
+  margin-top: 0.6em;
+}
+.form-wrap .help p {
+  font-family: 'coolvetica';
+  text-align: center;
+  font-size: 14px;
+}
+
