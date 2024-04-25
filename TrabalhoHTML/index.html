@@ -10,6 +10,59 @@
 </head>
 
 <body>
+
+
+    <main>
+     
+        <section class="product-launch">
+            <h2>Lan&ccedil;amento</h2>
+            <div class="countdown">
+                <p>Lan&ccedil;amento em: <time id="countdown" datetime="2:56:34">2:56:34</time></p>
+            </div>
+
+
+            <img src="Images/cama.jpg" alt="Produto">
+            <div class="features">
+                <h3>Roupa de cama</h3>
+                <ul>
+                    <li>100% personalizado</li>
+                    <li>Voc&ecirc; escolhe a imagem e a arte</li>
+                    <li>A arte pode ser feita por um de nossos designers</li>
+                </ul>
+            </div>
+            <form class="pre-order-form" action="#">
+                <h3>Pr&eacute;-venda</h3>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    
+        <section class="promotions">
+            <h2>Promo&ccedil;&otilde;es Especiais</h2>
+            <div class="offer">
+                <a href="produto.html"><img src="Images/copo.jpg" alt="Oferta 1"></a>
+                <div class="offer-details">
+                    <a href="produto.html"><h3>Xicara personalizada</h3></a>
+                    <p>xicara de alta qualidade com a imagem que quiser</p>
+                    <p>Pre&ccedil;o: <del>R$ 80,00</del> <span style="color: red;">R$ 56,90</span></p>
+                </div>
+            </div>
+            <div class="offer">
+                <a href="produto2.html"><img src="Images/kit.webp" alt="Oferta 2"></a>
+                <div class="offer-details">
+                    <a href="produto2.html"><h3>Kit personalizado</h3></a>
+                    <p>Este kit conta com tantas coisas, o presente perfeito.</p>
+                    <p>Pre&ccedil;o: <del>R$ 590,00</del> <span style="color: red;">R$ 390,00</span></p>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
  <header>
     <a href="index.html">
         <img src="Images/Logo.png" alt="Celeste's store">
@@ -27,73 +80,12 @@
             <a href="mapa.html">Mapa do site</a>
         </nav>
 
-        <!--login-->
         <a href="login.html" class="login-btn">Entrar</a>
-
-        <!--perfil-->
-
-
-
     </header>
+  
+    
+    
 
- <main>
-    <section> 
-    <h2>Sobre</h2>
-    <p>Bem-vindo &agrave; Celeste's Store! Somos uma loja especializada em produtos personalizados de alta qualidade, para atender &agrave;s suas necessidades.</p>
-    <p>Nossa miss&atilde;o &eacute; proporcionar a voc&ecirc; a melhor experi&ecirc;ncia de compra, oferecendo produtos exclusivos e um atendimento excepcional.</p>
-    <p>Explore nossa sele&ccedil;&atilde;o de produtos e entre em contato conosco caso tenha alguma d&uacute;vida ou sugest&atilde;o. Estamos aqui para ajud&aacute;-lo!</p>
-    </section>
-
-    <section id="depoimentos">
-        <h2>Depoimentos dos Clientes</h2>
-        <blockquote>
-            <img src="Images/perfil.jpg" alt="Foto do Cliente">
-            <p class="client-name">Maria Clara de Melo</p>
-            <p class="client-testimony">"Excelente loja, produtos de qualidade e atendimento excepcional."</p>
-        </blockquote>
-
-        <blockquote>
-            <img src="Images/Psor.jpg" alt="Foto do Cliente">
-            <p class="client-name">Gustavo Meneghetti</p>
-            <p class="client-testimony">"Estou muito satisfeito com minhas compras, recomendo a todos."</p>
-        </blockquote>
-
-        <blockquote>
-            <img src="Images/Ana.jpg" alt="Foto do Cliente">
-            <p class="client-name">Ana Julia Pereira</p>
-            <p class="client-testimony">"Entrega rápida e produtos bem embalados. Voltarei a comprar com certeza."</p>
-        </blockquote>
-    </section>
-
-
-    <section id="equipe">
-        <h2>Equipe</h2>
-        <div class="perfil2">
-            <div class="circle2">
-                <img src="Images/Celeste.jpeg" alt="Foto de Perfil">
-            </div>
-            <div class="perfil-info2">
-                <h3>Celeste</h3>
-                <p>Cargo: CEO</p>
-                <p class="bio">Comecei a empresa cedo, foi uma boa ideia e estou sempre fazendo o melhor para entregar os melhores produtos</p>
-            </div>
-        </div>
-
-        <div class="perfil2">
-            <div class="circle2">
-                <img src="Images/Giovana.jpg" alt="Foto de Perfil">
-            </div>
-            <div class="perfil-info2">
-                <h3>Giovana</h3>
-                <p>Cargo: Designer</p>
-                <p class="bio">Estou desde o primeiro ano da empresa ajudando na confec&ccedil;&atilde;o e design dos produtos.</p>
-            </div>
-        </div>
-
-        </div>
-    </section>
-
- </main>
 
  <footer>
     <p>Copyright &copy 2024 Celeste's Store</p>
@@ -112,6 +104,5 @@
 
     <script src="script.js"></script>
 </body>
-
 
 </html>

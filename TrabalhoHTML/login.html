@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Celeste's Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,38 +19,29 @@
             <a href="contato.html">Contato</a>
             <a href="sobre.html">Sobre</a>
             <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="sobre.html#depoimentos">Depoimentos</a>
             <a href="faq.html">FAQ</a>
+            <a href="lista.html">Lista</a>
+            <a href="mapa.html">Mapa do site</a>
+
         </nav>
     </header>
-    <main style="display: flex; justify-content:center ; align-items: center;height: 100vh;overflow: hidden;">
-        <div class="form-wrap">
-            <div class="tabs">
-                <h3 class="signup-tab"><a class="active" href="#signup-tab-content" style="border-top-left-radius: 7px;">Registro</a></h3>
-                <h3 class="login-tab"><a href="#login-tab-content" style="border-top-right-radius: 7px;">Entrar</a></h3>
-            </div>
-            <div class="tabs-content">
-                <div id="signup-tab-content" class="active">
-                    <form class="signup-form" id="signup-form" autocomplete="off">
-                        <input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
-                        <input type="text" class="input" id="user_name" autocomplete="off" placeholder="Apelido">
-                        <input type="password" class="input" id="signup_pass" autocomplete="off" placeholder="Senha">
-                        <input type="submit" class="button" value="Registrar">
-                    </form>
+    <main>
+        <div class="login-container">
+            <h2 class="login-h2">Login</h2>
+            <form action="#">
+                <div class="input-container">
+                    <label for="username">Apelido:</label>
+                    <input type="text" id="username" name="username" required>
                 </div>
-                <div id="login-tab-content">
-                    <form class="login-form" id="login-form" autocomplete="off">
-                        <input type="text" class="input" id="login_email" autocomplete="off" placeholder="Email ou Apelido">
-                        <input type="password" class="input" id="login_pass" autocomplete="off" placeholder="Senha">
-                        <input type="checkbox" class="checkbox" id="remember_me">
-                        <label for="remember_me">Me lembre</label>
-                        <input type="submit" class="button" value="Entrar">
-                    </form>
-                    <div class="help">
-                        <p><a href="senha.html">Esqueceu a senha?</a></p>
-                    </div>
+                <div class="input-container">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
                 </div>
-            </div>
-        </div>
+                <a href="perfil.html"><button type="submit">Login</button></a>
+            </form>
+            <p class="login-p">N&atilde;o tem uma conta? <a href="register.html">Registre-se</a></p>
     </main>
     
  <footer>

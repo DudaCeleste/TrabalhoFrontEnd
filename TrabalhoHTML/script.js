@@ -22,47 +22,25 @@ function topFunction() {
     document.documentElement.scrollTop = 0; 
 }
 
+/*ler mais*/
 
-//login
+document.addEventListener('DOMContentLoaded', function() {
+    const readMoreLinks = document.querySelectorAll('.read-more');
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    
-    var signupForm = document.getElementById("signup-form");
-    var loginForm = document.getElementById("login-form");
-
-    signupForm.addEventListener("submit", function(event) {
-        event.preventDefault(); 
-        var email = document.getElementById("user_email").value;
-        var name = document.getElementById("user_name").value;
-        var password = document.getElementById("signup_pass").value;
-        
-        window.location.href = "perfil.html";
-    });
-
-    loginForm.addEventListener("submit", function(event) {
-        event.preventDefault();
-        var emailOrUsername = document.getElementById("login_email").value;
-        var password = document.getElementById("login_pass").value;
-        
-        
-        window.location.href = "perfil.html";
-    });
-
-    var tabs = document.querySelectorAll(".tabs a");
-    tabs.forEach(function(tab) {
-        tab.addEventListener("click", function(event) {
+    readMoreLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
             event.preventDefault();
-            var tabContentId = this.getAttribute("href");
-            var tabContent = document.querySelector(tabContentId);
-            document.querySelectorAll(".tabs-content > div").forEach(function(content) {
-                content.classList.remove("active");
-            });
-            document.querySelector(tabContentId).classList.add("active");
-            document.querySelectorAll(".tabs a").forEach(function(tab) {
-                tab.classList.remove("active");
-            });
-            this.classList.add("active");
+            const postContent = this.previousElementSibling;
+
+            postContent.classList.toggle('collapsed');
+            if (postContent.classList.contains('collapsed')) {
+                this.textContent = 'Ler mais';
+            } else {
+                this.textContent = 'Mostrar menos';
+            }
         });
     });
 });
+
+
+
