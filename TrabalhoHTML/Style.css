@@ -8,14 +8,7 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 
-@keyframes countdown-animation {
-  from {
-      transform: scale(0.9);
-  }
-  to {
-      transform: scale(1);
-  }
-}
+
 
 
 /*header*/
@@ -346,6 +339,11 @@ h3 {
   margin: 0 auto;
 }
 
+/*sobre*/
+
+#sobre {
+  text-align: center;
+}
 
 
 /*contato*/
@@ -581,6 +579,7 @@ blockquote img {
 
 /*index*/
 
+
 .product-launch, .promotions {
   margin-bottom: 40px;
   padding: 20px;
@@ -593,14 +592,75 @@ blockquote img {
   width: 80%;
 }
 
-.countdown {
-  margin-bottom: 20px;
-  font-family: 'BebasNeue';
-  font-size: 24px;
-  animation: countdown-animation 1s infinite alternate;
+.product-launch p {
+  font-size: 20px;
 }
 
-.countdown p{
+.product-launch h2{
+  margin-bottom: 0px;
+}
+
+.align-vh {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%)
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper p {
+  font-size: 50px;
+  width: 30px;
+  margin: 0px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.container {
+  font-size: 1em;
+  height: 5em;
+  width: 5em;
+  line-height: 5em;
+  background: transparent;
+  color: white;
+  overflow: hidden;
+  display: inline-block;
+  font-family: 'coolvetica';
+  filter: drop-shadow(0 0 20px black); 
+}
+
+.container:after {
+  display: block;
+  margin: 0 auto;
+  font-size: 3em;
+  text-align: center;
+  width: 1em;
+}
+
+.minutes:after {
+  content: '00 01 02 03 04 05 06 07 08 09 10';
+  -webkit-animation: counter reverse 660s steps(11) backwards;
+}
+
+.seconds:after {
+  content: '00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59';
+  -webkit-animation: counter reverse infinite 60s steps(60) backwards;
+}
+
+.miliseconds:after {
+  content: '00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99';
+  -webkit-animation: counter reverse infinite 1s steps(100) backwards;
+}
+
+@-webkit-keyframes counter {
+  to{
+    -webkit-transform: translateY(-100%);
+  }
+}
+
+.tempo p{
   color: #ff0000;
 }
 

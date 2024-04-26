@@ -22,25 +22,5 @@ function topFunction() {
     document.documentElement.scrollTop = 0; 
 }
 
-/*ler mais*/
-
-document.addEventListener('DOMContentLoaded', function() {
-    const readMoreLinks = document.querySelectorAll('.read-more');
-
-    readMoreLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const postContent = this.previousElementSibling;
-
-            postContent.classList.toggle('collapsed');
-            if (postContent.classList.contains('collapsed')) {
-                this.textContent = 'Ler mais';
-            } else {
-                this.textContent = 'Mostrar menos';
-            }
-        });
-    });
-});
-
 
 
